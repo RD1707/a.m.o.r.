@@ -1,0 +1,33 @@
+/* style.css */
+
+body {
+    /* Remove margens e preenchimentos padrão do navegador */
+    margin: 0;
+    padding: 0;
+
+    /* Define uma cor de fundo para a página. Sinta-se à vontade para mudar! */
+    background-color: #fce4ec; /* Um rosa bem clarinho, tema "amor" :) */
+
+    /* Usa Flexbox para centralizar o conteúdo da página (nosso jogo) */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+
+    /* Garante que o corpo ocupe pelo menos toda a altura da tela */
+    min-height: 100vh;
+
+    /* Uma fonte padrão, caso queiramos adicionar algum texto fora do jogo */
+    font-family: 'Arial', sans-serif;
+}
+
+#jogo-container {
+    /* A largura e altura do jogo em si serão definidas no JavaScript pelo Phaser.
+       No entanto, podemos adicionar uma sombra para destacar a tela do jogo. */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); /* Uma sombra suave */
+}
+
+/* O Phaser cria um elemento <canvas> dentro da div #jogo-container.
+   Esta regra garante que o canvas não tenha espaçamentos indesejados. */
+canvas {
+    display: block;
+}
